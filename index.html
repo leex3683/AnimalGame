@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <container class="Start">
+        <button onclick="StartGame()">Start Game</button>
+    </container> -->
+    <Header class="hint">
+        <p>Guess the Animal</p>
+        <button onclick="GenAnim()">Generate New Animal</button>
+    </header>
+    <container class="hint">
+        <p class="left">Hint: </p>
+        <p id="hint"></p>
+        <button onclick="Reveal()" id="reveal">Reveal</button>
+    </container>
+    <container class="guess">
+        <form class="guess" name="myForm" onsubmit="return validateForm()" method="post">
+            Guess: <input type="text" name="guess">
+            <input type="submit" value="Submit">
+          </form>
+    </container>
+    <container class="Score">Score:</container>
+    <script src="./script.js"></script>
+</body>
+</html>
